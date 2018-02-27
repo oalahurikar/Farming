@@ -34,19 +34,15 @@ void loop()
   float humidity = dht.getHumidity();
   float temperature = dht.getTemperature();   
 
-  Serial.print('\n');  
-  Serial.print("Humidity = "); 
-  Serial.print(humidity, 1);
-  Serial.print('\n');  
-  Serial.print("DHT Temp C = "); 
-  Serial.print(temperature, 1);
-  Serial.print('\n');  
-  Serial.print("Soil Moisture = "); 
+  Serial.println("Humidity = "); 
+  Serial.println(humidity, 1);
+  Serial.println("DHT Temp C = "); 
+  Serial.println(temperature, 1);
+  Serial.println("Soil Moisture = "); 
   Serial.println(readSoil());
-  //Serial.print('\n');  
-  Serial.print("Thermocouple Temp = "); 
+  Serial.println("Thermocouple Temp = "); 
   sensors.requestTemperatures(); // Send the command to get temperature readings 
-  Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?  
+  Serial.println(sensors.getTempCByIndex(0)); // Why "byIndex"?  
    // You can have more than one DS18B20 on the same bus.  
    // 0 refers to the first IC on the wire 
    //delay(5000); 
