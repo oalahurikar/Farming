@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trail-1212",
+  "private_key_id": "a7cf89fbdcf350e28246616ce0c61202f3f2620f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDwSgA0xcFLLJ+e\ngblXm1FrFdnd1MVieOzVZQX017Ra8baRNi5E/WE/1tlEWk8ULRR1D+iX9byq+vRa\nBjtz6S7IHtUo8bbU1Sf1SZBDAjnO5icq9IlVOdxjEOf49oPRoJdiKRbDrboMXo6l\nLy+fJtAY1AwW2l0mOUoRuoh8rbFi4fvoR2AdgHOHipc5JvAr6wQ6r4F/SbETWsSF\nLjs1TxNly3+n1bHhdt//NCJ8oC9NyW31lgn0CVDIwmW+VUGBBah99PiwNlS9+c6E\nKn8KHyw87x+a4Oy1deHKFwM73UZozTf3d2LFkHen6xmGlqscnNlNNppf5oW7VAqu\nmrNmwrbTAgMBAAECggEACdVCvgKNsobWnyFcGN1ZRGCvF5pIouBq1udgbc0hDtno\nQXfjlJ0qRUxoCiezCy9S2xm5cthH3FboBoIxOcD14Fpjiuydv7+w23ixhdVbmHh1\n+aTOmJOv6h14N9C6QxzSCmzbXGdClJVydEGX9aFxwX7LDL6VTtEEr/DRbUJ/s+7n\nbNJxEmlKoBDCus9/WYgyY53NTYb3Ilr1+8Z0cvYMTU+L66u6rgXfqhjTZlhEYu0R\nFH+kJ+F6MPIckDVPCBg69W861d+9p8MG8gpDZnlSUqO3YKqcjHYmK84spOBr6AA3\nABNxpIESOXqAHHLVlVfPd1qSTPQL3Ic/GCRvUEC8oQKBgQD7zLqgehLby/oV5TaN\ngD7osVSSr2CxJ80xGv5/KxZfcjqX9E32jNm7E/nnc1+ZWk//ce2F6i5WE/TyfsJV\n9uVEzb/VRuwRKsxd2Bv+veumOOPcgspuQ0s4GT5JS62s4Weac567rbPvZY/vbAdG\nMyZikRNbGYRkfqb6WBLFhOxa4wKBgQD0TB4KmGUVRmzozLtOxUwsDrg1+BI3MJm1\nbr9nplP3pdvbkX8rxLs7V87/adecXCU1OBWcjW10IJBMumpnKx+pwKZ4hrAzsSYe\nNrOAQlURoL7oLy2t+cNR7fKCY5sqoiUGHd5ScKl6pDlOdK+BqKoHHGqd8AF5Au/F\nGn4C7DdHUQKBgEjhfA8g5j56LruRqZWRTiQZ16nRW0JLi+evsYPrW8Fqla0PyFUZ\ndZfhc07bpQsFCeyc9CvzmU/O3PInYGZzXO7qQqEfswpRAfATsh6sp/1nsAROUvtR\nPP9SxyV94xoL7+nTl1kpMNCU6/FXqk9WVMDoztpqa1iPFBOX1G8ZRzQTAoGAMdDj\nv11cH36A7ufwuhtZcRJ/VeIENOTgMzMmLMiqDrHvp1KAEDjJxUwelc7LfML9g2Cw\nZ4AfdbK+Oic5U1hj2IXEbIdqnt/c2gRljh34ouOYilg0hGmN/sL61MPi/EqcKicl\nEsKOjMe4N9trfpEaOuD8jMBITJjgs9y3HXl1vEECgYAR38x1bPhhAHesLgzsBMPa\nzKlZdXX5bvFuUFzt8VGkxKS3gccB1w6+qqkRZFs1vkQESZ8OwiiAqIBi4icGPu1m\nRpxTCMjP8o9yjq1GQPUfGKA+2p3ZehhD4t0XEYeKKHiBIdu8seLf7rl3qGMN/mCB\n0CQvl6Nu/nCVXBIp3MaI8Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "iot-969@trail-1212.iam.gserviceaccount.com",
+  "client_id": "108657218284102800801",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/iot-969%40trail-1212.iam.gserviceaccount.com"
+}

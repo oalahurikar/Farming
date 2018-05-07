@@ -27,6 +27,8 @@ void setup()
   pinMode(soilPower, OUTPUT);//Set D3 as an OUTPUT
   digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
   dht.setup(8); // data pin 8
+  //Serial.println("Temperature"); 
+  //Serial.println("Humidity (%)\tTemperature (C)\tMoisture\tThermocouple Temp (C)");
 }
 
 void loop() 
@@ -35,19 +37,23 @@ void loop()
   float humidity = dht.getHumidity();
   float temperature = dht.getTemperature();   
 
-  //Serial.print("Humidity = "); 
-  Serial.print(humidity, 1);
-  Serial.print("\t");
-  //Serial.print("DHT Temp C = "); 
-  Serial.print(temperature, 1);
-  Serial.print("\t");
-  //Serial.print("Soil Moisture = "); 
-  Serial.print(readSoil());
-  Serial.print("\t");
-  //Serial.print("Thermocouple Temp = "); 
-  sensors.requestTemperatures(); // Send the command to get temperature readings 
-  Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?  
-  Serial.print("\t");
+  //Serial.print(dht.getStatusString());
+  //Serial.print("\t");
+  //Serial.print("A"); 
+  Serial.write("humidity");
+  Serial.print("B"); 
+  //Serial.write(temperature, 1);
+  //Serial.println(dht.toFahrenheit(temperature), 1);
+  Serial.print("C"); 
+  Serial.write(readSoil());
+  
+
+  //This 1 second timefrme is used so you can test the sensor and see it change in real-time.
+  //For in-plant applications, you will want to take readings much less frequently.
+   sensors.requestTemperatures(); // Send the command to get temperature readings 
+   Serial.print("D"); 
+   //Serial.write(sensors.getTempCByIndex(0)); // Why "byIndex"? 
+   delay(10000);
    // You can have more than one DS18B20 on the same bus.  
    // 0 refers to the first IC on the wire 
    //delay(5000); 

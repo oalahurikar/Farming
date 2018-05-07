@@ -1,4 +1,5 @@
 // First we include the libraries
+// Soil Signal to A0; Thermocouple to Digital/PWM 5, DHT to Digital/PWM 8
 #include <DallasTemperature.h>
 #include <OneWire.h> 
 #include <DHT.h>
@@ -27,7 +28,7 @@ void setup()
   digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
   dht.setup(8); // data pin 8
   //Serial.println("Temperature"); 
-  Serial.println("Humidity (%)\tTemperature (C)\tMoisture\tThermocouple Temp (C)");
+  //Serial.println("Humidity (%)\tTemperature (C)\tMoisture\tThermocouple Temp (C)");
 }
 
 void loop() 
@@ -38,18 +39,21 @@ void loop()
 
   //Serial.print(dht.getStatusString());
   //Serial.print("\t");
-  Serial.print(humidity, 1);
-  Serial.print("\t\t");
-  Serial.print(temperature, 1);
-  Serial.print("\t\t");
+  Serial.print("A"); 
+  Serial.println(humidity, 1);
+  Serial.print("B"); 
+  Serial.println(temperature, 1);
   //Serial.println(dht.toFahrenheit(temperature), 1);
-  //Serial.print("\t\t");
+  Serial.print("C"); 
   Serial.println(readSoil());
-  Serial.print("\t\t");
+  
+
   //This 1 second timefrme is used so you can test the sensor and see it change in real-time.
   //For in-plant applications, you will want to take readings much less frequently.
    sensors.requestTemperatures(); // Send the command to get temperature readings 
-   Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?  
+   Serial.print("D"); 
+   Serial.println(sensors.getTempCByIndex(0)); // Why "byIndex"? 
+   delay(900000);
    // You can have more than one DS18B20 on the same bus.  
    // 0 refers to the first IC on the wire 
    //delay(5000); 
